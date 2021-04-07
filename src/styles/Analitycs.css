@@ -1,0 +1,33 @@
+@import url('./vars.css');
+
+.analitycs-options{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    width: 100%;
+}
+
+.analitycs-options__item{
+    border: 1px solid var(--main-gray);
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px 1px var(--main-gray);
+    cursor: pointer;
+    text-align: center;
+    transition:all 0.5s;
+    width: 42%;
+}
+
+.analitycs-options__item:hover{
+    transform: scale(1.1);
+}
+
+.analitycs-options__selected{
+    border: 1px solid var(--main-green);
+    box-shadow: 1px 1px 5px 1px var(--main-green);
+    color: var(--main-green);
+}
+
+.analitycs-data{
+    font-size: 2em;
+    text-align: center;
+}

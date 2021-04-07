@@ -1,0 +1,6 @@
+@import url('./vars.css');
+
+.order{
+    border-bottom: 1px solid var(--main-gray);
+    margin-bottom: 10px;
+}

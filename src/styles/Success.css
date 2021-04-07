@@ -1,0 +1,28 @@
+@import url('./vars.css');
+
+.Sucess-hero{
+    align-items: center;
+    border: 1px solid var(--main-gray);
+    box-shadow: 1px 1px 10px 1px var(--main-gray);
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: center;
+    margin: 100px auto;
+    padding: 30px;
+    text-align: center;
+    width: 300px;
+}
+
+.Sucess-hero a {
+    color: var(--main-blue);
+}
+
+@media(max-width:426px){
+    .Sucess-hero{
+        height: 600px;
+        margin-left: 100px;
+        margin-bottom: 910px;
+        width: 750px;
+    }
+}

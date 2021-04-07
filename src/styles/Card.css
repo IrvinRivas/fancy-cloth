@@ -1,0 +1,65 @@
+@import url('./vars.css');
+
+.card{
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px 1px var(--main-gray);
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 323px;
+    margin: 20px 20px;
+    text-align: center;
+    transition: all 0.5s;
+    width: 230px;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card-image{
+    border: none;
+    border-radius: 5px;
+    height: 200px;
+    width: 200px;
+}
+
+.card-hero{
+    background-color: var(--ligth-gray);
+    height: 100px;
+}
+
+.card-title{
+    height: 50%;
+}
+
+@media(max-width:769px){
+    .card{
+        height: 600px;
+        width: 400px;
+    }
+
+    .card-image{
+        width: 400px;
+        height: 400px;
+    }
+
+    .card-hero{
+        height: 183px;
+    }
+}
+
+/* @media(max-width:426px){
+    .card{
+        height: 600px;
+        width: 400px;
+    }
+
+    .card-image{
+        width: 400px;
+        height: 400px;
+    }
+
+    .card-hero{
+        height: 153px;
+    }
+} */

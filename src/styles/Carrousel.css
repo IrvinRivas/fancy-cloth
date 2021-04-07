@@ -1,0 +1,25 @@
+@import url('./vars.css');
+
+.carrousel-content{
+    display: flex;
+    flex-wrap: nowrap;
+    height: 380px;
+    overflow-y: auto;
+    padding: 0 5px;
+}
+
+.carrousel-content::-webkit-scrollbar {
+    display: none;
+}
+
+.carrousel-arrows{
+    height: 50px;
+    position: relative;
+    top: 100px;
+}
+
+@media(max-width:769px){
+    .carrousel-content{
+       height: 750px;
+    }
+}

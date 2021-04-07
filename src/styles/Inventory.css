@@ -1,0 +1,127 @@
+@import url('./vars.css');
+
+.inventory-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.inventory-main{
+    padding: 0 10px;
+}
+
+.inventory-item{
+    border: 1px solid var(--main-gray);
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px 1px var(--main-gray);
+    cursor: pointer;
+    margin-top: 20px;
+    user-select: none;
+    text-align: center;
+    transition: all 0.5s;
+    width: 28%;
+}
+
+.inventory-item:hover{
+    transform: scale(1.1);
+}
+
+.inventory-item__selected{
+    border: 1px solid var(--main-green);
+    box-shadow: 1px 1px 5px 1px var(--main-green);
+    color: var(--main-green);
+}
+
+#search-product__container{
+    background-color: white;
+    border: 1px solid var(--main-gray);
+    position: absolute;
+    right: 570px;
+    top: 373px;
+    width: 250px;
+}
+
+.search-product__option{
+    border-bottom: 1px solid var(--main-gray);
+    cursor: pointer;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.inventory-row{
+    align-items: center;
+    border-bottom: 1px solid var(--main-gray);
+    border-top: 1px solid var(--main-gray);
+    border-left: 1px solid var(--main-gray);
+    display: flex;
+    margin: 5px 0;
+    width: 100%;
+}
+
+.inventory-row__item{
+    align-items: center;
+    display: flex;
+    border-right: 1px solid var(--main-gray);
+    height: 30px;
+    margin-left: 10px;
+    width: 33%;
+}
+
+.row-odd{
+    background-color: var(--ligth-gray);
+}
+
+.row-odd__item{
+    border-right: 1px solid var(--main-gray);
+}
+
+table{
+    width: 100%;
+}
+
+.inventory-row__img{
+    height: 20px;
+    width: 20px;
+}
+
+.inventory-row__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(max-width:1025px){
+    #search-product__container{
+        top: 450px;
+        left: 510px;
+    }
+}
+
+@media(max-width:769px){
+    #search-product__container{
+        font-size: 2em;
+        top: 530px;
+        left: 1150px;
+    }
+}
+
+@media(max-width:426px){
+    #search-product__container{
+        top: 1300px;
+        left: 800px;
+        width: 500px;
+    }
+}
+
+@media(max-width:376px){
+    #search-product__container{
+        top: 1350px;
+        left: 700px;
+    }
+}
+
+@media(max-width:321px){
+    #search-product__container{
+        top: 1400px;
+    }
+}
+

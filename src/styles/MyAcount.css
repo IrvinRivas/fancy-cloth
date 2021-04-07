@@ -1,0 +1,59 @@
+@import url('./vars.css');
+
+.myAcount-options__item{
+    border: 1px solid var(--main-gray);
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px 1px var(--main-gray);
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin: 20px 0;
+    margin-left: 10px;
+    padding-left: 10px;
+    transition: all 0.5s;
+    width: 300px;
+}
+
+.myAcount-options__item:hover{
+    transform: scale(1.1);
+}
+
+.myAcount-options__item{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    /* width: 100%; */
+}
+
+.myAcount-options__img{
+    height: 40px;
+}
+
+@media(max-width: 769px){
+    .myAcout{
+        font-size: 1.5em;
+        padding: 0 50px;
+    }
+    .myAcount-options__item{
+        height: 100px;
+        margin: 50px 0;
+        width: 800px;
+    }
+    .myAcount-options{
+        margin-bottom: 240px;
+    }
+}
+
+@media(max-width: 426px){
+    .myAcout{
+        font-size: 1.5em;
+    }
+    .myAcount-options__item{
+        height: 150px;
+        margin: 50px 0;
+        width: 800px;
+    }
+    .myAcount-options{
+        margin-bottom: 440px;
+    }
+}

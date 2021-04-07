@@ -1,0 +1,135 @@
+@import url('./vars.css');
+
+#header{
+    align-items: center;
+    background-color: var(--main-black);
+    color: white;
+    border-bottom: 1px solid #c1c1c1;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+#header ul{
+    display: flex;
+    align-items: center;
+}
+
+#header ul li {
+    margin-right: 20px;
+}
+
+#header ul {
+    margin-right: 10px;
+}
+
+a li{
+    color: white;
+}
+
+.header-input__search{
+    border: 1px solid gray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-family:sans-serif;
+    height: 30px;
+    outline: none;
+}
+
+.header-btn__search{
+    background-color: var(--main-green);
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 34px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.header-btn__login{
+    align-items: center;
+    background-color: var(--main-green);
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    height: 43px;
+    justify-content: center;
+    margin-right: 20px;
+    width: 200px;
+}
+
+.cart{
+
+}
+
+.header-cart__icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.header-cart__icon p{
+    margin: 0;
+}
+
+.menu-options ul{
+    position:absolute;
+}
+
+.menu-options__list{
+    background-color: var(--main-black);
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.menu-options__submenu{
+    display: none;
+    margin: 10px 0;
+    padding-right: 15px;
+}
+
+ul a .menu-options__submenu{
+    color: white;
+}
+
+.menu-options:hover > ul .menu-options__submenu{
+    display: block;
+}
+
+@media(max-width:426px){
+    #header{
+        font-size: 1.5em;
+        justify-content: center;
+    }
+    #header ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .cart{
+        height: 60px;
+        width: 60px;
+    }
+
+    .header-btn__login{
+        height: 150px;
+        width: 400px;
+    }
+
+    .header-input__search{
+        height: 100px;
+        font-size: 1em;
+        margin-top: 30px;
+        width: 600px;
+    }
+    .header-btn__search{
+        height: 104px;
+        font-size: 1em;
+        margin-top: 30px;
+        width: 200px;
+    }
+}
