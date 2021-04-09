@@ -1,3 +1,3 @@
-const API = 'http://localhost:3005'
+const API = 'https://fancy-cloth-api.herokuapp.com/:3005'
 
 export default API;
